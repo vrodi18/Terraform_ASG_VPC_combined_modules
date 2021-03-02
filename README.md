@@ -68,7 +68,9 @@ tags = {
     Department  = "IT"
     }
 ```
-```
-terraform init
-terraform apply -var-file regions/Virginia.tfvars
-```
+### Use following command to run this module:
+    * terraform init
+    * terraform apply -var-file region/Virginia.tfvars
+    * terraform apply -var-file region/Ohio.tfvars
+    * terraform apply -var-file region/Oregon.tfvars
+    * terraform apply -var-file region/California.tfvars

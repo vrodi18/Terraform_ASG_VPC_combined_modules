@@ -68,3 +68,7 @@ tags = {
     Department  = "IT"
     }
 ```
+```
+terraform init
+terraform apply -var-file regions/Virginia.tfvars
+```

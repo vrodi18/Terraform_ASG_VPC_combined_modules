@@ -15,12 +15,3 @@ resource "aws_autoscaling_group" "WP" {
   max_size         = 4
 
 }
-
-# mixed_instances_policy {
-# s
-
-
-# lifecycle = {
-#   create_before_destroy = true
-# }
-

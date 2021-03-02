@@ -1,8 +1,7 @@
 resource "aws_security_group" "SG_InternalELB" {
   name        = "SG_InternalELB"
   description = "Allow TLS inbound traffic"
-  vpc_id      = var.vpc_id                     //aws_vpc.main.id
-
+  vpc_id      = var.vpc_id                     
   ingress {
     description = "HTTP"
     from_port   = 80

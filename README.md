@@ -4,7 +4,7 @@ This module will create a WordPress Server ASG on public subnet and MariaDB ASG 
 
 ```
 module "ASG" {
-  source              = "../"
+  source              = "../terraform-aws-asg-project"
   region              = var.region
   max_size            = var.max_size
   min_size            = var.min_size
@@ -24,7 +24,7 @@ module "ASG" {
 }
 
 module "vpc-project" {
-  source        = "../../terraform-aws-vpc"
+  source        = "../terraform-aws-vpc"
   region        = var.region
   cidr_block    = var.cidr_block
   public_cidr1  = var.public_subnet1
